@@ -12,7 +12,6 @@ type Props = {
 const TaskItem: VFC<Props> = memo(({ task }) => {
 	const dispatch = useAppDispatch();
 	const { deleteTaskMutation } = useMutateTask();
-	console.log("rendered TaskItem");
 	if (deleteTaskMutation.isLoading) return <p>Deleting...</p>;
 
 	return (

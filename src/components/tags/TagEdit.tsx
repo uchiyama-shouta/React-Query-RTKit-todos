@@ -16,7 +16,6 @@ const TagEdit: VFC = memo(() => {
 			updateTagMutation.mutate(editedTag);
 		}
 	};
-	console.log("rendered TagEdit");
 	if (updateTagMutation.isLoading) return <span>Updating...</span>;
 	if (createTagMutation.isLoading) return <span>Creating...</span>;
 

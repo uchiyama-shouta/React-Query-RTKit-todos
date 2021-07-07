@@ -25,8 +25,6 @@ const TaskEdit: VFC = memo(() => {
 		</option>
 	));
 
-	console.log("rendered TaskEdit");
-
 	if (status === "loading") return <div>{"Loading..."}</div>;
 	if (status === "error") return <div>{"Error"}</div>;
 	if (updateTaskMutation.isLoading) {

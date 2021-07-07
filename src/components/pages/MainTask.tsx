@@ -6,7 +6,6 @@ import TaskEdit from "../tasks/TaskEdit";
 
 const MainTask: VFC = () => {
 	const history = useHistory();
-	console.log("rendered MainTask");
 	return (
 		<>
 			<p className="mb-10 text-xl font-bold">Tasks</p>

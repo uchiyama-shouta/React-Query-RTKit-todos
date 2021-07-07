@@ -4,7 +4,7 @@ import TaskItem from "./TaskItem";
 
 const TaskList: VFC = memo(() => {
 	const { status, data } = useQueryTasks();
-	console.log("rendered TaskList");
+
 	if (status === "loading") return <div>{"Loading..."}</div>;
 	if (status === "error") return <div>{"Error"}</div>;
 	return (

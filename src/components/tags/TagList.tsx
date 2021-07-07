@@ -4,7 +4,6 @@ import TagItem from "./TagItem";
 
 const TagList: VFC = memo(() => {
 	const { status, data } = useQueryTags();
-	console.log("rendered TagList");
 	if (status === "loading") return <div>{"Loading..."}</div>;
 	if (status === "error") return <div>{"Error"}</div>;
 	return (

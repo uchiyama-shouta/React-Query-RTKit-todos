@@ -6,7 +6,6 @@ import TagList from "../tags/TagList";
 
 const MainTag: VFC = () => {
 	const history = useHistory();
-	console.log("rendered MainTag");
 	return (
 		<>
 			<p className="mb-10 text-xl font-bold">Tags</p>
