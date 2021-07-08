@@ -23,6 +23,11 @@ export const taskSlice = createSlice({
 	name: "task",
 	initialState,
 	reducers: {
+		/**
+		 * stateは現在のstate
+		 * action.payloadは引数に渡された値
+		 * と覚える！！！
+		 */
 		setEditedTask: (state, action: PayloadAction<EditTask>) => {
 			state.editedTask = action.payload;
 		},
